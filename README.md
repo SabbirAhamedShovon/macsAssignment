@@ -56,6 +56,9 @@ This encryption algorithm combines:
 ### Encryption
  <img src="encryption.png" alt="hstu_logo_.png" width="250" >
 
+ ### Decryption
+  <img src="decryption.png" alt="hstu_logo_.png" width="250" >
+
 
 
 ### Key Generation
