@@ -38,15 +38,18 @@ Dinajpur-5200</b></h3>
 
 
 
-# Advanced Encryption Algorithm Using Number Theory Concepts
+<h1>Modified RSA Algorithm</h1>
 
-## Algorithm Overview
-This encryption algorithm combines:
-- GCD and co-prime numbers for key generation
-- Bit masking for initial data transformation
-- Permutation for position scrambling
-- Euler's totient function for RSA-style encryption
-- Chinese Remainder Theorem for decryption optimization
+<h2>Algorithm Overview</h2>
+<p>This encryption algorithm combines:</p>
+<ul>
+  <li>GCD and co-prime numbers for key generation</li>
+  <li>Bit masking for initial data transformation</li>
+  <li>Permutation for position scrambling</li>
+  <li>Euler's totient function for RSA-style encryption</li>
+  <li>Chinese Remainder Theorem for decryption optimization</li>
+</ul>
+
 
 ## Flow Charts
 
