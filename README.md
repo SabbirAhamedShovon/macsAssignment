@@ -18,6 +18,7 @@
 </h3>
 <br>
 <h3 align="center">
+<hr>
   Submitted by 
 </h3>
 <h3 align="center">
@@ -31,10 +32,12 @@
 <h3 align="center"><b>Pankaj Bhowmik  </b></h3>
 <h3 align="center"><b>Lecturer, Department of CSE</b></h3>
 <br>
+<hr>
 <h3 align="center"> <b>Department of Computer Science and Engineering </b></h3>
 <h3 align="center"><b>Hajee Mohammad Danesh Science and Technology University  
 Dinajpur-5200</b></h3>
-
+<hr>
+<br>
 
 
 
