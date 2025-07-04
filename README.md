@@ -51,14 +51,58 @@ This encryption algorithm combines:
 ## Flow Charts
 
 ### Key Generation
+<ol>
+  <li>
+    Select two large co-prime numbers <b>p</b> and <b>q</b>
+    <ul>
+      <li>Generate random numbers in a specified range</li>
+      <li>Ensure gcd(p, q) = 1</li>
+    </ul>
+  </li>
+  <li>
+    Compute modulus <b>n</b> and Euler's totient &phi;(n)
+    <ul>
+      <li>n = p &times; q</li>
+      <li>&phi;(n) = (p - 1) &times; (q - 1)</li>
+    </ul>
+  </li>
+  <li>
+    Choose public exponent <b>e</b>
+    <ul>
+      <li>Select e where 1 &lt; e &lt; &phi;(n) and gcd(e, &phi;(n)) = 1</li>
+    </ul>
+  </li>
+  <li>
+    Compute private exponent <b>d</b>
+    <ul>
+      <li>d = e<sup>-1</sup> mod &phi;(n) (modular inverse)</li>
+    </ul>
+  </li>
+  <li>
+    Generate permutation key
+    <ul>
+      <li>Create a random shuffle of byte positions (0–255)</li>
+    </ul>
+  </li>
+  <li>
+    Generate bitmask key
+    <ul>
+      <li>Create a random 256-bit mask</li>
+    </ul>
+  </li>
+</ol>
+<p align = "center">
  <img src="key.png" alt="hstu_logo_.png" width="400" height = "500">
+</p>
 
 ### Encryption
+
+<p align = "center">
  <img src="encryption.png" alt="hstu_logo_.png" width="400" height = "500">
-
+</p>
  ### Decryption
-  <img src="decryption.png" alt="hstu_logo_.png" width="400" height = "500">
-
+ 
+  <div align = "center" ><img src="decryption.png" alt="hstu_logo_.png" width="400" height = "500"> </div>
 
 
 ### Key Generation
