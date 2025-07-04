@@ -51,9 +51,10 @@ This encryption algorithm combines:
 ## Flow Charts
 
 ### Key Generation
+ <img src="key.png" alt="hstu_logo_.png" width="250">
 
-
-### Key Generation
+### Encryption
+ <img src="encryption.png" alt="hstu_logo_.png" width="250" >
 
 
 
