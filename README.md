@@ -36,3 +36,27 @@
 Dinajpur-5200</b></h3>
 
 
+
+
+# Advanced Encryption Algorithm Using Number Theory Concepts
+
+## Algorithm Overview
+This encryption algorithm combines:
+- GCD and co-prime numbers for key generation
+- Bit masking for initial data transformation
+- Permutation for position scrambling
+- Euler's totient function for RSA-style encryption
+- Chinese Remainder Theorem for decryption optimization
+
+## Flow Charts
+
+### Key Generation
+
+
+### Key Generation
+
+
+
+### Key Generation
+
+
