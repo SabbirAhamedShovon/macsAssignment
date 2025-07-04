@@ -435,10 +435,10 @@ string decrypt(const BIGNUM* ciphertext, const KeyPair& private_key, BN_CTX* ctx
 
 <div style="font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333;">
 
-<h1 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">Encryption/Decryption Process</h1>
+<h1 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">Encryption/Decryption Process At a Glance</h1>
 
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-<h2 style="color: #2980b9; margin-top: 0;">=== KEY GENERATION ===</h2>
+<h2 style="color: #2980b9; margin-top: 0;"> KEY GENERATION </h2>
 
 <div style="background-color: white; padding: 10px; border-radius: 3px; margin-bottom: 10px;">
 <p><strong>Generated public modulus n:</strong><br>
@@ -456,7 +456,7 @@ string decrypt(const BIGNUM* ciphertext, const KeyPair& private_key, BN_CTX* ctx
 </div>
 
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-<h2 style="color: #2980b9; margin-top: 0;">=== ENCRYPTION ===</h2>
+<h2 style="color: #2980b9; margin-top: 0;"> ENCRYPTION </h2>
 
 <div style="background-color: white; padding: 10px; border-radius: 3px; margin-bottom: 10px;">
 <p><strong>Original message:</strong> "Secret123"</p>
