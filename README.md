@@ -96,15 +96,28 @@ This encryption algorithm combines:
 </p>
 
 ### Encryption
+<ol>
+  <li>Convert message to bytes</li>
+  <li>Apply bitmask using XOR operation</li>
+  <li>Permute byte positions</li>
+  <li>Convert to big integer</li>
+  <li>Encrypt using modular exponentiation:<br>c ≡ m<sup>e</sup> mod n</li>
+</ol>
 
 <p align = "center">
  <img src="encryption.png" alt="hstu_logo_.png" width="400" height = "500">
 </p>
- ### Decryption
+ <h2>Decryption</h2>
+<ol>
+  <li>Decrypt using modular exponentiation:<br>m ≡ c<sup>d</sup> mod n</li>
+  <li>Convert back to bytes</li>
+  <li>Reverse permutation</li>
+  <li>Remove padding</li>
+  <li>Reverse bitmask</li>
+  <li>Convert to original message</li>
+</ol>
  
   <div align = "center" ><img src="decryption.png" alt="hstu_logo_.png" width="400" height = "500"> </div>
 
-
-### Key Generation
 
 
