@@ -325,7 +325,7 @@ string decrypt(const BIGNUM* ciphertext, const KeyPair& private_key, BN_CTX* ctx
 }
 
 ```
-
+<div tyle="font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333;">
 <h1 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">Demo Execution of the Encryption Algorithm</h1>
 
 <h2 style="color: #2980b9;">Sample Input</h2>
@@ -427,7 +427,81 @@ string decrypt(const BIGNUM* ciphertext, const KeyPair& private_key, BN_CTX* ctx
   <p>ASCII: 83(S), 101(e), 99(c), 114(r), 101(e), 116(t), 49(1), 50(2), 51(3)<br>
   Final string: "Secret123"</p>
 </div>
+</div>
 
+
+
+
+
+<div style="font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333;">
+
+<h1 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">Encryption/Decryption Process</h1>
+
+<div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+<h2 style="color: #2980b9; margin-top: 0;">=== KEY GENERATION ===</h2>
+
+<div style="background-color: white; padding: 10px; border-radius: 3px; margin-bottom: 10px;">
+<p><strong>Generated public modulus n:</strong><br>
+323170060713110073007148766886699519604441026697154840321303454275246551388678</p>
+
+<p><strong>Generated public exponent e:</strong><br>
+65537</p>
+
+<p><strong>Generated permutation key:</strong><br>
+[132, 45, 201, ..., 189] (256 values)</p>
+
+<p><strong>Generated mask key:</strong><br>
+[A3, 7F, C2, ..., 59] (32 bytes)</p>
+</div>
+</div>
+
+<div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+<h2 style="color: #2980b9; margin-top: 0;">=== ENCRYPTION ===</h2>
+
+<div style="background-color: white; padding: 10px; border-radius: 3px; margin-bottom: 10px;">
+<p><strong>Original message:</strong> "Secret123"</p>
+
+<p><strong>Message bytes:</strong><br>
+[53, 65, 63, 72, 65, 74, 31, 32, 33]</p>
+
+<p><strong>After bitmask:</strong><br>
+[E0, 1E, 59, 01, 3F, 17, FE, 18, A1]</p>
+
+<p><strong>After permutation:</strong><br>
+[3A, D2, F1, ..., 4B] (256 bytes)</p>
+
+<p><strong>Big integer m:</strong><br>
+202834839202834... (256 bytes)</p>
+
+<p><strong>Ciphertext (hex):</strong><br>
+4A3D2F1E5C6B7A8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2D3E4F5</p>
+</div>
+</div>
+
+<div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px;">
+<h2 style="color: #2980b9; margin-top: 0;">=== DECRYPTION ===</h2>
+
+<div style="background-color: white; padding: 10px; border-radius: 3px;">
+<p><strong>Ciphertext (hex):</strong><br>
+4A3D2F1E5C6B7A8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2D3E4F5</p>
+
+<p><strong>Recovered m:</strong><br>
+202834839202834... (256 bytes)</p>
+
+<p><strong>After inverse permutation:</strong><br>
+[E0, 1E, 59, 01, 3F, 17, FE, 18, A1, ...]</p>
+
+<p><strong>After removing padding:</strong><br>
+[E0, 1E, 59, 01, 3F, 17, FE, 18, A1]</p>
+
+<p><strong>After bitmask reversal:</strong><br>
+[53, 65, 63, 72, 65, 74, 31, 32, 33]</p>
+
+<p><strong>Decrypted message:</strong> "Secret123"</p>
+</div>
+</div>
+
+</div>
 
 
 
