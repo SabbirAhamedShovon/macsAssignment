@@ -1,2 +1,38 @@
-# macsAssignment
-Cryptanalysis. Encryption Algorithm
+<p align="center">
+  <img src="hstu_logo.png" alt="hstu_logo_.png" width="250" height="300">
+</p>
+<h1 align="center">
+  <b>Encryption Algorithm</b>
+</h1>
+<h3 align="center">
+  <br>
+  <b>Level-3 Semester-II</b>  
+</h3>
+<h3 align="center">
+  Course Code: CSE 361 
+</h3>
+
+<h3 align="center">
+  Course Title: Mathematical Analysis for Computer Science
+  
+</h3>
+<br>
+<h3 align="center">
+  Submitted by 
+</h3>
+<h3 align="center">
+<b>Md. Sabbir Ahamed Shovon (ID: 2102034) </b> </h3>
+<br>
+
+<h3 align="center">
+  Submitted To 
+</h3>
+
+<h3 align="center"><b>Pankaj Bhowmik  </b></h3>
+<h3 align="center"><b>Lecturer, Department of CSE</b></h3>
+<br>
+<h3 align="center"> <b>Department of Computer Science and Engineering </b></h3>
+<h3 align="center"><b>Hajee Mohammad Danesh Science and Technology University  
+Dinajpur-5200</b></h3>
+
+
